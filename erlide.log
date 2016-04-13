@@ -1,0 +1,24 @@
+19:23:02,934 I: (ErlangCore.java:64) : Starting CORE Thread[Worker-0,5,main]
+19:23:02,934 I: (ErlangCore.java:79) : *** starting Erlide v0.29.11.201502161407 (core=0.24.12.201502161407) (model api=0.24.11.201502161407) *** (Cp1252) ui
+19:23:03,028 I: (ErlangCore.java:86) : Started CORE
+19:23:03,044 F: (ErlangPlugin.java:88) : Core started
+19:23:05,709 F: (ErlangHostnameRetriever.java:40) : Test long hostname: null
+19:23:05,709 W: (ErlangHostnameRetriever.java:46) : Can't use null as long name
+19:23:12,558 F: (ErlangHostnameRetriever.java:40) : Test long hostname: Dominic
+19:23:13,622 W: (ErlangHostnameRetriever.java:46) : Can't use Dominic as long name
+19:23:14,137 F: (ErlangHostnameRetriever.java:40) : Test short hostname: Dominic
+19:23:14,168 F: (HostnameUtils.java:74) : Detected:: Dominic && null
+19:23:14,200 F: (BackendActivator.java:25) : Backend plugin started
+19:23:14,215 I: (ErlideUIPlugin.java:130) : Starting UI Thread[Worker-0,5,main]
+19:23:14,215 F: (ModelActivator.java:19) : Starting Erlang model api
+19:23:14,247 F: (BackendFactory.java:42) : Create ide backend 17.4.0
+19:23:14,247 F: (BackendFactory.java:56) : Create backend f8230_Dominic_a5fcb7_erlide
+19:23:14,356 F: (OtpNodeProxy.java:420) : START node :> ["c:\program files\erl6.3/bin/erl", -sname, f8230_Dominic_a5fcb7_erlide@Dominic, -setcookie, erlide] *** C:\Users\Dominic\workspace\sew_test3_wdhl
+19:23:14,356 F: (OtpNodeProxy.java:302) : Runtime f8230_Dominic_a5fcb7_erlide@Dominic starting
+19:23:14,387 F: (OtpNodeProxy.java:213) : f8230_Dominic_a5fcb7_erlide@Dominic: waiting connection to peer... 
+19:23:14,825 F: (OtpNodeProxy.java:220) : connected!
+19:23:14,950 F: (OtpNodeProxy.java:307) : Runtime f8230_Dominic_a5fcb7_erlide@Dominic running
+19:23:15,075 F: (LogEventHandler.java:27) : info: {"Monitoring java node",jerlide_a5fd53@Dominic}
+19:23:15,091 F: (LogEventHandler.java:27) : info: {"Start monitor process: ",10000000,50000000}
+19:23:15,482 F: (ModelActivator.java:30) : Started model api
+19:23:15,497 I: (ErlideUIPlugin.java:152) : Started UI
