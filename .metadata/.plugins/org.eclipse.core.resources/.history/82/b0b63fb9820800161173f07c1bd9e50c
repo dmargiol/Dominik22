@@ -1,0 +1,34 @@
+package test3_wdhl;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class fFiles {
+
+	public static void createFiles(String baseDir, int subDirs){
+		File f = new File(baseDir+"\\hallo.txt");
+		File newFile = new File(baseDir+"\\sub\\");
+		FileWriter w = null;
+		String newPath = null;
+		try {
+			w = new FileWriter(f);
+			w.write("Hallo Welt!");
+			newFile.mkdir();
+			newPath = f.getPath();
+			w.close();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		System.out.println(newPath);
+		if(subDirs > 0){
+			createFiles(newFile.getAbsolutePath(),subDirs-1);
+		}
+	}
+	
+	public static void main(String []args){
+		createFiles("C:\\Users\\Dominic\\Documents",5);
+	}
+}
