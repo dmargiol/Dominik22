@@ -1,5 +1,42 @@
 package test;
 
+import java.io.File;
+
 public class test {
-	
+	public String filePath = "";
+
+	public int files = 0;
+
+	public void listFiles(String path) {
+		File f = new File(path);
+		File[] flist = f.listFiles();
+
+		for (int i = 0; i < flist.length; i++) {
+			if (flist[i].isDirectory()) {
+				listFiles(flist[i].getAbsolutePath());
+			}
+			if (flist[i].isFile()) {
+				files++;
+			}
+		}
+		System.out.println("Datein: " + files);
+	}
+
+	public void listStorage(String path) {
+		File f = new File(path);
+		File[] flist = f.listFiles();
+
+		System.out.println(f.length());
+	}
+
+	public test() {
+		listFiles("C:\\Users\\Dominic\\Desktop");
+		listStorage("C:\\Users\\Dominic\\Desktop");
+	}
+
+	public static void main(String[] args) {
+		new test();
+
+	}
+
 }
